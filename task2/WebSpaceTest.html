@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Test For Web Space Solution</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: 0;
+    }
+
+    .ul {
+        background: #f9f9fa;
+    }
+
+    .Part1 {
+        width: 100%;
+        background: #F3F3F3;
+        padding-top: 5%;
+        padding-bottom: 5%;
+
+    }
+
+    .HeaderImage {
+        width: 200px;
+    }
+
+    .Part1Left {
+        width: 70%;
+        padding-top: 10%;
+        text-align: justify;
+    }
+
+    .Part1Left h2 {
+        text-align: left;
+        font-family: auto;
+        font-weight: bold;
+        font-size: 40px;
+    }
+
+    .Part1Left p {
+        font-size: 25px;
+    }
+
+    .Part1Center {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Part1RightCenter {
+        width: 78%;
+    }
+
+    .Part1RightTop {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .Part1RightTop h5 {
+        font-family: auto;
+        font-weight: bold;
+    }
+
+    .imgPart1 {
+        width: 350px;
+    }
+
+    .Part1SecondImage {
+        width: 200px;
+        margin: 15px 0px 15px 0px;
+    }
+
+    .Part1RightTop2 {
+        text-align: center;
+    }
+
+    .Part1RightCenter h1 {
+        color: #835C25;
+        font-family: auto;
+        font-weight: 900;
+        margin: 0px;
+    }
+
+    .Part1RightBottom {
+        width: 100%;
+        margin-top: 45px;
+    }
+
+    .Part1Button {
+        padding: 10px;
+        border: none;
+        width: 150px;
+        background: #835C25;
+        color: white;
+        margin-top: 30px;
+    }
+
+    .Part2 {
+        width: 100%;
+        background: white;
+        padding-top: 10%;
+    }
+
+    .Part2Left {
+        width: 100%;
+        padding-left: 20%;
+
+    }
+
+    .Part2Right {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Part2Left h1 {
+        color: #835C25;
+        font-family: auto;
+        font-weight: bold;
+    }
+
+    .Part2SignImage {
+        width: 270px;
+    }
+
+    .Part2FirstImage {
+        left: 43px;
+        width: 250px;
+        position: relative;
+        z-index: 3;
+        top: 45px;
+    }
+
+    .Part2SecondImage {
+        position: relative;
+        z-index: 2;
+        width: 280px;
+        bottom: 112px;
+    }
+
+    .Part2CircleImage {
+        position: relative;
+        bottom: 180px;
+        z-index: 3;
+    }
+
+    .Part2FruitImage {
+        position: relative;
+        top: 90px;
+        right: 255px;
+        z-index: 4;
+    }
+
+    .Part3 {
+        width: 100%;
+        background: #F5F2ED;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .Part3img1 {
+        width: 750px;
+    }
+
+    .Part3Img2 {
+        width: 530px;
+        position: relative;
+        top: 35px;
+        right: 221px;
+    }
+
+    .ImagePortion {
+        width: 100%;
+        display: flex;
+    }
+
+    .TextPart {
+        width: 50%;
+        font-size: 18px;
+        padding-top: 5%;
+    }
+
+    .Part4 {
+        width: 100%;
+        padding: 5% 0% 5% 0%;
+
+    }
+
+    .Part4Top {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Part4Bottom {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5%;
+    }
+
+    .Part4Box {
+        width: 329px;
+        height: 539px;
+        padding: 45% 3% 3% 0%;
+
+    }
+
+    .Part4Box2 {
+        width: 329px;
+        height: 380px;
+        padding: 32% 4% 4% 20%;
+
+    }
+
+    .Part4Box3 {
+        background: #835C25;
+        width: 329px;
+        height: 380px;
+        padding: 32% 4% 4% 17%;
+
+    }
+
+
+
+
+    .Part4Box2 h3 {
+        color: #835C25;
+        font-family: auto;
+        font-weight: bolder;
+        font-size: 26px;
+    }
+
+    .Part4Box2 p {
+        font-size: 18px;
+    }
+
+    .Part4Box3 h3 {
+        color: white;
+        font-family: auto;
+        font-weight: bolder;
+        font-size: 26px;
+    }
+
+    .Part4Image {
+
+        z-index: 1;
+        top: 80px;
+        position: relative;
+        left: 30px;
+        border-radius: 88px;
+    }
+
+
+    .Part4 h2 {
+        font-family: auto;
+        font-weight: bolder;
+        font-size: 40px;
+    }
+
+    .Part4 p {
+        font-size: 18px;
+    }
+
+    .Part5 {
+        width: 100%;
+        background-image: url(Images/Group\ 3.png);
+        color: white;
+        text-align: center;
+        padding: 12% 5% 12% 5%;
+    }
+
+    .Part5Innner {
+        width: 50%;
+        display: inline-block;
+    }
+
+    .BtnPart5 {
+        width: 200px;
+        background: #835C25;
+        color: white;
+        padding: 15px;
+        margin-top: 20px;
+        font-size: 15px;
+        border: none;
+    }
+
+    .Part6 {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        padding: 5% 0% 5% 0%;
+    }
+
+    .Part6Left {
+        width: 45%;
+        display: inline-block;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .Part6Right {
+        width: 50%;
+        display: inline-block;
+    }
+
+    .Part6LeftInner {
+        width: 50%;
+        display: inline-block;
+        text-align: left;
+        font-size: 25px;
+        padding: 17% 0% 10% 5%;
+    }
+
+    .Part6LeftInner p {
+        width: 384px;
+
+    }
+
+    .Part6RightInner {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
+
+    .ImgPart6 {
+        width: 700px;
+    }
+
+    .MidPartOf56 {
+        background: #F5F2ED;
+        width: 50%;
+        text-align: center;
+        position: relative;
+        border-top-left-radius: 80px;
+        padding-top: 43px;
+        padding-bottom: 43px;
+        bottom: 43px;
+        left: 440px;
+
+    }
+
+    .MidPartOf910 {
+        background: #F5F2ED;
+        width: 62%;
+        text-align: center;
+        position: relative;
+        padding-top: 43px;
+        padding-bottom: 43px;
+        bottom: 110px;
+        left: 350px;
+        box-shadow: 0px 0px 10px 0px #d4cfc7;
+    }
+
+    .MidPartInner {
+        width: 200px;
+        height: 110px;
+        display: inline-block;
+        padding: 20px;
+    }
+
+    .Part7 {
+        Width: 100%;
+        justify-content: center;
+    }
+
+    .btnPart8 {
+        width: 100%;
+    }
+
+    .btnPart8 {
+        width: 200px;
+        background: #835C25;
+        color: white;
+        padding: 15px;
+        margin-top: 20px;
+        font-size: 17px;
+        border: none;
+        margin-top: 30px;
+    }
+
+    .Part7Inner {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Part7 {
+        width: 100%;
+        background: #F5F2ED;
+        padding: 5% 0% 5% 0%;
+    }
+
+    .Part7Inner {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 8%;
+    }
+
+    .Part7Left {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .Part7Right {
+
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .btnPart7 {
+        width: 250px;
+        background: #835C25;
+        color: white;
+        padding: 15px;
+        margin-top: 20px;
+        font-size: 17px;
+        border: none;
+        margin-top: 30px;
+    }
+
+    .Part9 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background: #F5F2ED;
+
+    }
+
+    .Part9Inner {
+        height: 450px;
+        display: flex;
+        align-items: center;
+        width: 50%;
+        background: #F5F2ED;
+        flex-direction: column;
+        padding-top: 4%;
+
+    }
+
+    .FormButton {
+        width: 100%;
+        background:#745222;
+        color: antiquewhite;
+        border: none;
+    }
+
+    .Part9Inner input {
+        width: 500px;
+        margin-bottom: 10px;
+        border: none;
+    }
+
+    .Part10 {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .Part10Inner {
+        width: 50%;
+        display: inline-block;
+        margin-top: -40px;
+    }
+
+    .Part10Inner li {
+        display: inline;
+        list-style-type: none;
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    
+</style>
+
+<body>
+    <navbar>
+        <ul class="nav justify-content-center">
+            <li class="nav-item ">
+                <a style="color:rgb(173, 102, 21)" class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a style="color:rgb(173, 102, 21)" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Item1</a>
+                    <a class="dropdown-item" href="#">Item2</a>
+                    <a class="dropdown-item" href="#">Item3</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  disabled" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <img src="Images/headerImage.png" class="HeaderImage">
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  disabled" href="#">Webinars</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  disabled" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Blog</a>
+            </li>
+        </ul>
+    </navbar>
+    <div class="Part1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg4 col-md-4 col-sm-12">
+                    <div class="Part1Left">
+                        <h2 style="text-align: left;">Disital</h2>
+                        <h2 style="text-align:center;">Marketing</h2>
+                        <p>We have the best tools at our fingertips to equip you with everything your brands needs to
+                            brakdown
+                            barriers.
+                        </p>
+                        <button class="Part1Button">Contact Us</button>
+                    </div>
+                </div>
+                <div class="col-lg4 col-md-4 col-sm-12">
+
+                    <div class="Part1Center">
+                        <img src="Images/banner23.png" class="imgPart1">
+                    </div>
+                </div>
+                <div class="col-lg4 col-md-4 col-sm-12">
+
+                    <div class="Part1Right">
+                        <div class="Part1RightTop">
+                            <h5>Social Media Stretegy</h>
+                                <div class="Part1TopRight">
+                                    <img src="Images/Rectangle 24.png" class="Part1SecondImage">
+                                </div>
+                        </div>
+                        <div class="Part1RightTop2">
+                            <p>Digital Advertising</p>
+                            <p>Web Devlopment</p>
+                            <p>Content creation</p>
+                        </div>
+
+
+                        <div class="Part1RightCenter">
+                            <h1 style="text-align: left;">Social</h1>
+                            <h1 style="text-align: center;">Stretegy</h1>
+                        </div>
+                        <div class="Part1RightBottom">
+                            <img src="Images/Follow us_ Facebook-f twitter Linkedin-in instagram.png">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Part2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg6 col-md-6 md-6">
+                    <div class="Part2Left">
+                        <h1>About Us</h1>
+                        <p>Born in Atlanta, Juniperus is a creative consulting agency specializing in digital marketing.
+                            We help companies and organizations of all sizes create, build, and maintain brand identity
+                            to help them stay relevant, competitive and meaningful in their industries.
+                        </p>
+                        <img src="Images/Amber + Alicia.png" class="Part2SignImage">
+                    </div>
+
+                </div>
+                <div class="col-lg6 col-md-6 md-6">
+                    <div class="Part2Right">
+                        <div class="Right1">
+                            <img src="Images/Rectangle 3.png" class="Part2FirstImage">
+                        </div>
+                        <div class="Right2">
+                            <img src="Images/Rectangle 4.png" class="Part2SecondImage">
+                            <img src="Images/Juniperus-Optimized 1.png" class="Part2FruitImage">
+                            <img src="Images/Ellipse 2.png" class="Part2CircleImage">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Part3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class=" col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                    <div class="ImagePortion">
+                        <div class="Part3FirstImage">
+                            <img src="Images/Rectangle 9.png" class="Part3img1">
+                        </div>
+                        <div class="Part3SecondImage">
+                            <img src="Images/Rectangle 10.png" class="Part3Img2">
+                            <img src="Images/Client Reel.png">
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-xl54 col-lg-5 col-md-5 col-sm-12">
+                    <div class="TextPart">
+                        <h1 style="color: #835C25;font-family: auto;font-weight: bold;"> Mission</h1>
+                        <p>Juniperus grew from our founder's passion for political and non-profit organizations. We
+                            believe
+                            that businesses who do good for others shouldn't have to spend time marketing themselves so
+                            we
+                            do the work for you! We have the best tools at our fingertips to equip you with everything
+                            your
+                            brand needs to break down barriers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Part4">
+        <div class="container">
+            <div class="Part4Top">
+                <div class="BoxOuterDiv">
+                    <div class="Part4Box Box1">
+                        <img src="Images/instalap 1 (2).png" class="Part4Image" style="display:none;">
+                        <h5>WHAT WE DO</h5>
+                        <h2 style="color: #835C25;">Juneperus Services</h2>
+                        <p>We pride ourselves on producing results-driven services that is specifi timely, and relevant
+                        </p>
+                        <button class="Part1Button">Explore All</button>
+                    </div>
+                </div>
+                <div class="BoxOuterDiv">
+                    <img src="Images/instalap 1 (2).png" class="Part4Image">
+                    <div class="Part4Box2 Box2" style="border:1px solid#835C25;">
+                        <h3>Social Media Stretegy</h3>
+                        <br>
+                        <p><span style="color:#243917;">✓</span> Content Scheduling</p>
+                        <p><span style="color:#243917">✓</span> Community Management</p>
+                        <p><span style="color:#243917">✓</span> Reporting</p>
+                    </div>
+                </div>
+                <div class="BoxOuterDiv">
+                    <img src="Images/instalap 1 (2).png" class="Part4Image">
+                    <div class="Part4Box2 Box3" style="border:1px solid#835C25;">
+                        <h3>Digital Advertising</h3>
+                        <br>
+                        <p><span style="color:#243917;">✓</span> Content Scheduling</p>
+                        <p><span style="color:#243917">✓</span> Design</p>
+                        <p><span style="color:#243917">✓</span> Reporting</p>
+                    </div>
+                </div>
+            </div>
+            <div class="Part4Bottom">
+                <div class="BoxOuterDiv">
+                    <img src="Images/instalap 1 (3).png" class="Part4Image">
+                    <div class="Part4Box2" style="border:1px solid#835C25;">
+                        <h3>Web Devlopment</h3>
+                        <br>
+                        <p><span style="color:#243917;">✓</span> E Commerce Solutions</p>
+                        <p><span style="color:#243917">✓</span> Design forword and fully Responsive</p>
+                        <p><span style="color:#243917">✓</span> SEO Optimization/Website Copy</p>
+                    </div>
+                </div>
+                <div class="BoxOuterDiv">
+                    <img src="Images/instalap 1 (3).png" class="Part4Image">
+                    <div class="Part4Box2" style="border:1px solid#835C25;">
+                        <h3>Content Creation</h3>
+                        <br>
+                        <p><span style="color:#243917;">✓</span> Branding</p>
+                        <p><span style="color:#243917">✓</span> Graphic Design + Print Collateral </p>
+                        <p><span style="color:#243917">✓</span> Brand Voice</p>
+                    </div>
+                </div>
+                <div class="BoxOuterDiv">
+                    <img src="Images/instalap 1 (3).png" class="Part4Image">
+                    <div class="Part4Box3" style="background:#835C25;color: #f3f3f3 !important;">
+                        <h3>Content Creation</h3>
+                        <br>
+                        <p><span style="color:white;">✓</span> Branding</p>
+                        <p><span style="color:white">✓</span> Graphic Design + Print Collateral </p>
+                        <p><span style="color:white">✓</span> Brand Voice</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="Part5">
+        <div class="Part5Innner">
+            <h6>BE MEANINGFULL</h6>
+            <h1>Great Change</h1>
+            <button class="BtnPart5">LETS WORK TOGETHER</button>
+        </div>
+    </div>
+    <div class="MidPartOf56">
+        <div class="MidPartInner MidPart1">
+            <img src="Images/briefing (Traced).png">
+            <p style="font-weight: 700;margin-top: 5px;">Project Completed</p>
+        </div>
+        <div class=" MidPartInner MidPart2">
+            <img src="Images/expert (Traced).png">
+            <p style="font-weight: 700;margin-top: 5px;">Expert Team</p>
+        </div>
+        <div class="MidPart3 MidPartInner">
+            <img src="Images/costumer (1) (Traced).png">
+            <p style="font-weight: 700;margin-top: 5px;">Project Completed</p>
+        </div>
+        <div class="MidPart4 MidPartInner">
+            <img src="Images/consultation (Traced).png">
+            <p style="font-weight: 700;margin-top: 5px;">Consultant Done</p>
+        </div>
+    </div>
+    <div class="Part6">
+        <div class="Part6Left">
+            <div class="Part6LeftInner">
+                <h1 style="color: #835C25;font-family: auto;font-weight: bold;">Clients</h1>
+                <p>Juniperus specializes in digital marketing and social strategy for progressive politics, small
+                    businesses, non-profits, and advocacy organizations.</p>
+            </div>
+        </div>
+        <div class="Part6Right">
+            <div class="Part6RightInner">
+                <img src="Images/Screenshot_24.png" class="ImgPart6">
+            </div>
+
+        </div>
+    </div>
+    <div class="Part7">
+        <div class="container">
+            <h1 style="color: #835C25;text-align: center;font-family: auto;
+font-weight: bold;    font-size: 60px;">Client Spotlight</h1>
+            <div class="Part7Inner">
+                <div class="Part7Left">
+                    <img src="Images/Rectangle 23.png">
+                </div>
+                <div class="Part7Right">
+                    <h1 style="color:#835C25;">Love For Nica</h1>
+                    <p>Love For Nica is a social enterprise selling high-quality goods that are 100% handcrafted in
+                        Nicaragua. In addition to providing job opportunities to the Nicaraguan people, Love for Nica
+                        gives 50% of all profits back to Nicaragua.</p>
+                    <button class="btnPart7">VISIT LOVE FOR NICA SITE</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="Part8">
+        <div class="container">
+            <h1 style="color: #835C25;text-align: center;padding: 5% 0%;">@juniperusco</h1>
+            <img src="Images/instagram (1).png">
+            <div class="Part7Inner">
+                <button class="btnPart8">Follow @juniperusco</button>
+            </div>
+        </div>
+    </div>
+    <div class="Part9">
+        <div class="Part9Inner">
+            <h1 style="color: #5c3a0a;">Join Our Mailing List</h1>
+            <p>Access to webinars,insider marketing updates,new blog posts,client news,and more. </p>
+            <form>
+
+                <input type="text" input type="email" placeholder="Email"><br>
+                <button class="FormButton">SUBSCRIBE</button>
+
+            </form>
+            <img src="Images/Screenshot_2.png" class="formImage">
+        </div>
+
+    </div>
+    <div class="MidPartOf910">
+        <div class="MidPartInner MidPart1">
+            <img src="Images/mwsa.png">
+        </div>
+        <div class=" MidPartInner MidPart2">
+            <img src="Images/shopify (1).png">
+        </div>
+        <div class="MidPart3 MidPartInner">
+            <img src="Images/ga_atlanta_digital-marketing-agencies_2022_transparent.png">
+        </div>
+        <div class="MidPart4 MidPartInner">
+            <img src="Images/Agency-Partner-Dark-Blue.png">
+        </div>
+        <div class="MidPart4 MidPartInner">
+            <img src="Images/3 (1).png">
+        </div>
+    </div>
+    <div class="Part10">
+        <div class="Part10Inner">
+            <li>About</li>
+            <li>Webinars</li>
+            <li>Contact</li>
+            <li>Blogs</li>
+        </div>
+    </div>
+
+</body>
+
+</html>

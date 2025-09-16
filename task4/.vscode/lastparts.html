@@ -1,0 +1,665 @@
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0px;
+            padding-top: 2px;
+        }
+
+        .headdiv {
+            /* border: solid black; */
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+
+        .firstdiv {
+            max-width: 1400px;
+            padding: 50px 0 80px;
+            margin: 0 auto;
+        }
+
+        .feedback {
+            width: 4.5%;
+            float: left;
+        }
+
+        .hamburger {
+            width: 1%;
+            position: absolute;
+            right: 359px;
+            top: 48%;
+            color: #191919;
+            z-index: 1;
+        }
+
+        .navigation {
+            float: left;
+            width: 80%;
+            margin-left: 0px;
+            /* border: solid orange; */
+        }
+
+        .ul {
+            padding: 25px 0px;
+        }
+
+        .ul li {
+            list-style: none;
+            margin: 0px;
+            display: inline-block;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .ul li a {
+            margin-right: 40px;
+
+        }
+
+        .partA {
+            width: 100%;
+            float: left;
+            padding-top: 6%;
+        }
+
+        .partAleft {
+            width: 43%;
+            float: left;
+        }
+
+        .partAright {
+            width: 53%;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+
+        .bedge {
+            width: 75px;
+            padding: 0px 0px 0px 2px;
+            /* float: left; */
+        }
+
+        .image1 {
+            width: 45px;
+            margin: 5px;
+        }
+
+        .icononline {
+            width: 50px;
+            margin: 9px;
+        }
+
+        .pill1 {
+            font-family: system-ui, -apple-system, BlinkMacSystemFo nt, 'Segoe UI',
+                Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+            background-color: rgb(19, 19, 19);
+            border-radius: 0px;
+            padding: 10px;
+            border: none;
+            float: right;
+            position: relative;
+            bottom: 100px;
+            right: 180px;
+            width: 140px;
+            border: solid white;
+        }
+
+        .review {
+            width: 26%;
+            padding: 15px 20px 10px 0px;
+        }
+
+        p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 30px;
+            float: left;
+            margin: 22px 14px 19px 0px;
+        }
+
+        .secoundpart {
+            width: 100%;
+            /* height: 50%; */
+            background-image: url(curve-botttom.svg);
+            float: left;
+            padding: 3% 0px 0px 0px;
+            font-family: sans-serif;
+            font-weight: 700;
+        }
+
+        .subdiv {
+            width: 100%;
+            box-shadow: 0px 0px 4px -1px rgb(275, 218, 57);
+            float: left;
+            text-align: center;
+        }
+
+        .logo2 {
+            width: 10%;
+            padding: 35px 56px;
+            display: inline-block;
+        }
+
+        .sageit {
+            width: 12%;
+            padding: 72px 50px;
+        }
+
+        .thirdpart {
+            width: 100%;
+            float: left;
+
+        }
+
+        .fourthpart {
+            width: 100%;
+            float: left;
+        }
+
+        .dishesdiv {
+            width: 20%;
+            text-align: center;
+            display: inline-block;
+            border-radius: 4%;
+            box-shadow: 0px 0px 9px 1px rgb(240 200 111 / 75%);
+            margin: 7px;
+            padding: 2px 26px 25px;
+            min-height: 320px;
+        }
+
+        .dish {
+            width: 70%;
+            margin-top: 10%;
+            margin-bottom: 2%;
+            object-fit: contain;
+        }
+
+        .type {
+            width: 6%;
+            position: relative;
+            left: 227px;
+            bottom: 165px;
+        }
+
+        .fifthpart {
+            float: left;
+            width: 100%;
+            background-color: #fef8e7;
+            margin-top: 70px;
+        }
+
+        .sixthdiv {
+            float: left;
+            width: 100%;
+            background-color: #ffc538;
+            position: relative;
+            padding-bottom: 100px;
+        }
+
+        .lefticondiv {
+            width: 46%;
+            float: left;
+        }
+
+        .outer_div {
+            background: #fff;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            width: 50%;
+            height: 80%;
+            z-index: 0;
+            float: left;
+            size: 66px;
+            margin-top: 50px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .ownerimages {
+            float: right;
+            width: 20%;
+            margin: 18px;
+            float: right;
+            position: relative;
+            top: 150px;
+            left: 162px;
+            margin-right: 10px;
+            margin-left: 32px;
+        }
+
+        .ownerimages1 {
+            float: right;
+            width: 20%;
+            margin: 18px;
+            float: right;
+            position: relative;
+            top: 150px;
+            left: 5px;
+        }
+
+        .curvebottom {
+            position: relative;
+            top: 58px;
+            right: 336px;
+
+        }
+
+        .imagesbutton {
+            font-family: system-ui, -apple-system, BlinkMacSystemFo nt, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+            background-color: rgb(19, 19, 19);
+            border-radius: 0px;
+            padding: 10px;
+            border: none;
+            float: right;
+            width: 176px;
+            border: solid white;
+            position: relative;
+            top: 110px;
+            left: 108px;
+        }
+
+        .seventdiv {
+            background-image: url(images/hexagon-bg.svg);
+            background-position-x: 3px;
+            background-position-y: -78px;
+            background-repeat: no-repeat;
+            width: 100%;
+            float: left;
+        }
+
+        .seventhleft {
+            width: 50%;
+            float: left;
+        }
+
+        .seventhright {
+            background-color: #fff;
+            width: 47%;
+            display: inline-block;
+            border-radius: 4%;
+            box-shadow: 0px 0px 9px 1px rgb(240 200 111 / 75%);
+            margin: 0px 0px 0px 0px;
+            padding: 30px 0px 0px 25px;
+            min-height: 340px;
+            position: relative;
+            right: 205px;
+            top: 96px;
+            height: 31%;
+            z-index: 1;
+        }
+
+        .eighthdiv {
+            float: left;
+            width: 100%;
+            background-color: #ffc538;
+            position: relative;
+            padding-bottom: 100px;
+        }
+
+        .lefticondiv1 {
+            width: 46%;
+            float: left;
+            background: #fff;
+            position: absolute;
+
+        }
+
+        .ninthdiv {
+            width: 100%;
+            background-color: #fff;
+            float: left;
+
+        }
+
+        .ninthleft {
+            width: 40%;
+            float: left;
+
+        }
+
+        .ninthright {
+            width: 60%;
+            float: left;
+        }
+
+        .tenthdivleft {
+            width: 49%;
+            border: solid violet;
+            height: 80%;
+            float: left;
+        }
+
+        .tenthdivright {
+            width: 49%;
+            border: solid rgb(15, 69, 196);
+            float: left;
+            height: 80%;
+        }
+
+        .one {
+            border: solid rgb(7, 151, 38);
+            height: 20%;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="headdiv">
+        <div class="firstdiv">
+            <img src="images/feedback.svg" class="feedback">
+            <nav class="navigation">
+                <ul class="ul">
+                    <li><a
+                            style="letter-spacing: 1px; color: #191919; border-bottom: solid 1px #191919; margin-left: 40px;">MENU</a>
+                    </li>
+                    <li><a style="letter-spacing: 1px; color: #191919;  border-bottom: solid 1px #191919;">CORPORATE
+                            MEALS</a></li>
+                    <li><a><img src="images/icons8-hamburger-250.png" class="hamburger"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="partA">
+        <div style="max-width: 1400px;padding: 20px 0px;margin: 0 auto;">
+            <div class="partAleft">
+                <h1 style="font-family:sans-serif; font-size:50px;font-weight: bold; max-width: 60%; margin-bottom:0px; 
+                margin: 52px 0px 15px 0px;">
+                    Good <span style="color:rgb(258,187,24)">Food </span>for
+                    Every <span style="color:rgb(258,187,24)">Mood</span></h1>
+                <div>
+                    <p style=" font-weight: bolder; letter-spacing: 1px; color:rgba(50, 45, 45, 0.9)
+                arge"> Delivering fresh, hot
+                        and fast</p>
+                    <img src="images/bedges-img.svg" class="bedge">
+                </div>
+                <div>
+                    <p style="font-size: 20px; margin:16px 14px 19px 0px;">Order via</p>
+                    <image src="images/zomato.svg" class="image1">
+                        <image src="images/swiggy.svg" class="image1">
+                            <image src="images/online-order.svg" class="image1">
+                </div>
+                <img src="images/reviews4.9-01.svg" class="review">
+            </div>
+            <div class="partAright" style="position: absolute;">
+                <img src="images/Banner.png" style="width: 100%;height:550px">
+                <button class="pill1">ORDER NOW</button>
+            </div>
+        </div>
+    </div>
+    <div class="secoundpart">
+        <div style="max-width: 1400px;padding: 20px 0px;margin: 0 auto;">
+            <h2 style="text-align: center;">Our corporate clients</h2>
+            <div class="subdiv">
+                <img src="images/security-weaves-300x300.png" class="logo2">
+                <img src="images/avaso-300x300.png" class="logo2">
+                <img src="images/Bosch-300x300.png" class="logo2">
+                <img src="images/lambda-test-300x300.png" class="logo2">
+                <img src="images/Sage-IT-Logo-150x60-1.png" class="sageit">
+            </div>
+        </div>
+    </div>
+    <div class="thirdpart">
+        <div style="max-width: 1400px;padding: 20px 0px;margin: 0 auto;">
+            <ul class="ul">
+                <li><a style="letter-spacing: 1px; color: #191919; border-right: solid 1px #191919; padding-right: 15px;
+                padding-right: 15px;">ITALIAN</a></li>
+                <li><a
+                        style="letter-spacing: 1px; color: #191919; border-right: solid 1px #191919; padding-right: 15px;">BEE
+                        CHINESE</a></li>
+                <li><a
+                        style="letter-spacing: 1px; color: #191919; border-right: solid 1px #191919; padding-right: 15px;">DESERTS</a>
+                </li>
+                <li><a
+                        style="letter-spacing: 1px; color: #191919; border-right: solid 1px #191919; padding-right: 15px;">BEVRAGES</a>
+                </li>
+                <li><a style="letter-spacing: 1px; color: #191919;  padding-right: 15px;"><button style="font-family: system-ui, -apple-system, BlinkMacSystemFo nt, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                color: black;
+                background-color: rgb(255 193 47);
+                border-radius: 0px;
+                padding: 10px;
+                border: none;
+                float: right;
+                position: relative;
+                bottom: 11px;
+                right: 25px;
+                width: 130px;
+                border: solid #191919;
+            ">SEE ALL</button></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="fourthpart">
+        <div style="max-width: 1400px;padding: 20px 0px;margin: 0 auto;">
+            <div class="subdiv" style="box-shadow: none;">
+                <div class="dishesdiv"><img src="images/veg.svg" class="type"><img src="images/Wrap-Italian-Bites.png"
+                        class="dish">
+                    <p style="margin: 22px 14px 23px 35px;
+                    font-size: 22px;"> Veg Grilled Wrap</p>
+                </div>
+                <div class="dishesdiv"><img src="images/veg.svg" class="type"><img
+                        src="images/Cheesy-Fries-Italian-Bites-1.png" class="dish">
+                    <p style="margin: 22px 14px 0px 35px;
+                    font-size: 22px;">Cheesy Fries (with Salsa)</p>
+                </div>
+                <div class="dishesdiv"><img src="images/nonveg.svg" class="type"><img
+                        src="images/Chicken-Tikka-Grilled-Sandwich-Italian-Bites-1.png" class="dish">
+                    <p style="margin: 22px 14px 0px 35px;
+                        font-size: 22px;">Chicken Tikka Grilled Sandwich </p>
+                </div>
+                <div class="dishesdiv"><img src="images/veg.svg" class="type"><img src="images/White-Sauce-Pasta-1.png"
+                        class="dish">
+                    <p style="margin: 22px 14px 23px 35px;
+                    font-size: 22px;">White Sauce Pasta</p>
+                </div>
+            </div>
+            <button style="font-family: system-ui, -apple-system, BlinkMacSystemFo nt, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: black;
+            background-color: rgb(255 193 47);
+            border-radius: 0px;
+            padding: 10px;
+            border: none;
+            float: right;
+            position: relative;
+            top: 11px;
+            right: 595px;
+            width: 180px;
+            margin:10px;
+            border: solid #191919;">VIEW MORE ITEMS</button></a>
+        </div>
+    </div>
+    <div class="fifthpart">
+        <div style="max-width: 1400px;padding: 20px 0px;margin: 0 auto;">
+            <div style="width: 48%; float:left; padding-bottom: 60px;"><img src="images/endless-food-choices.svg"></div>
+            <div style="width: 50%; float:left; padding-left: 22px;">
+                <h1 style="font-family:sans-serif; font-size:37px;font-weight: bold; max-width: 60%;
+                    margin-bottom:0px;">
+                    Endless Food Choices</h1>
+                <p style="float: left; text-decoration-color:#191919;font-size: 25px;">Feeling hungry? Say No More. From
+                    Chinese,
+                    Italian, American, North Indian, South Indian to Street
+                    Bites and Confectionery, we've got all your cravings sorted. Mindfully chosen ingredients are
+                    combined with natural honey to create recipes that tingle your taste buds and promote wellness.
+                    Fasten your napkins and get ready to dive into the pool of flavors at BitesBee - A Food Nest where
+                    you will taste the difference with a hint of wholesome sweetness of honey.</p>
+                <button style="font-family: system-ui, -apple-system, BlinkMacSystemFo nt, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: black;
+            background-color: rgb(255 193 47);
+            border-radius: 0px;
+            padding: 10px;
+            border: none;
+            float: right;
+            position: relative;
+            right: 504px;
+            width: 180px;
+            margin:10px;
+            border: solid #191919;">EXPLORE ALL CUISINES</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="sixthdiv">
+        <div class="outer_div">
+            <img src="images/icon-left.svg">
+        </div>
+        <div style="max-width: 1400px; padding: 20px 0px; margin:0 auto; position: relative;">
+            <div class="lefticondiv" style="margin-left:52px;margin-top: 80px;">
+                <h1
+                    style="font-family:sans-serif; font-size:37px;font-weight: bold; max-width: 60%; margin-bottom:0px;text-decoration-color:#191919;">
+                    What Inspired Us?</h1>
+                <h6 style="font-size: 22px; margin: 10px 0px; color:#1d1b1b">Protect and Celebrate the Bees</h6>
+                <p style="float: left; text-decoration-color:#403c3c;font-size: 23px; padding-right: 92px; letter-spacing: 1px;
+                    margin: 5px 14px 19x 0px;">
+                    I always dreamt of opening a
+                    restaurant and while I was juggling to find a name for it, a notification
+                    popped on my mobile that said Bees are dying at an alarming rate. That's when I decided it has to be
+                    BitesBee - A Food Nest. Here's a fact: 90% of the world's nutrition is reliant on pollinators and
+                    Bees are heavily responsible for crop pollination. Without them, our ecosystem will collapse. So,
+                    here we
+                    are- protecting the bees and celebrating them by serving you home-like meals healthy, fresh and at
+                    pocket-friendly prices.</p>
+                <h6 style="font-size: 22px; margin: 10px 0px; color:#1d1b1b">- Satish Saini</h6>
+                <img src="images/curve-botttom.svg" class="curvebottom">
+            </div>
+            <img src="images/homepage-team-1.png " class="ownerimages" style="margin-right: 10px;">
+
+            <img src="images/Mask-Group-12.png" class="ownerimages1">
+            <button class="imagesbutton">OUR TEAM</button>
+            <button class="imagesbutton" style="margin-right: 23%;">OUR STORY</button>
+        </div>
+    </div>
+    </div>
+    <div class="seventdiv">
+        <div style="max-width: 1400px;  margin:0 auto; position: relative; margin-top: 80px;
+        margin-bottom: 80px;">
+            <div class="seventhleft"><img src="images/Bee-a-Part-of-the-Revolution.png"
+                    style="width:90%; margin-bottom:80px ;"></div>
+            <div class="seventhright">
+                <h1
+                    style="font-family:sans-serif; font-size:29px;font-weight: bold; max-width: 60%; margin-bottom:0px;text-decoration-color:#191919;">
+                    Bee a Part of the Revolution</h1>
+                <p style="float: left; text-decoration-color:#403c3c;font-size: 24px; letter-spacing: 1px;
+                   ">
+                    Do you dream to have your own restaurant but lack the expertise to set up and run a food business?
+                    Then, seize this opportunity. With just one-time investment, you can own the profitable franchise of
+                    BitesBee – A Food Nest in your city and fast track your journey by attaching a well-known brand
+                    name. Get in touch for more details!</p>
+                <button style="font-family: system-ui, -apple-system, BlinkMacSystemFo nt, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: black;
+            background-color: rgb(255 193 47);
+            border-radius: 0px;
+            padding: 10px;
+            border: none;
+            float: right;
+            position: relative;
+            right: 466px;
+            width: 180px;
+            margin:10px;
+            border: solid #191919;">GET FRANCHISE</button></a>
+
+            </div>
+        </div>
+    </div>
+    <div class="eighthdiv">
+        <div style="max-width: 1400px; padding: 20px 0px; margin:0 auto; position: relative;">
+            <div class="lefticondiv" style="margin-left: 52px;
+            margin-top: 80px;
+            background:white;
+            position: relative;
+            top: 20px;
+            right: 26%;
+            height: 52%;
+            width:50%;
+            z-index: 0;
+            float: left;
+            size: 66px;
+            margin-top: 40px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            padding-left: 295px;">
+                <div style="width: 95%;">
+                    <h1
+                        style="font-family:sans-serif; font-size:29px;font-weight: bold; max-width: 60%; margin-bottom:0px;text-decoration-color:#191919; margin-top: 84px;">
+                        Delivering Bee-liciousness at Your Doorstep</h1>
+                    <p style="float: left; text-decoration-color:#403c3c;font-size: 21px; padding-right: 92px; letter-spacing: 1px;
+                    margin: 5px 14px 19x 0px;">
+                        Stay Home. Stay Safe. Our hygienic and well-sanitised bees are at work for you. We'll deliver
+                        you
+                        the best taste wrapped in wholesome goodness and deliver it fresh at your doorstep, contactless.
+                    </p>
+                    <div>
+                        <p style="font-size: 20px; margin:16px 14px 19px 0px; font-weight: 600; float: none;">Order via
+                        </p>
+                        <image src="images/zomato.svg" class="image1">
+                            <image src="images/swiggy.svg" class="image1">
+                                <image src="images/online-order.svg" class="image1">
+                    </div>
+                </div>
+                <img src="images/curve-botttom.svg" class="curvebottom" style="position: relative; top:81px;">
+            </div>
+            <div style="width: 25%; float: left;">
+                <img class="rightdeliverydiv" src="images/Screenshot 2023-06-05 110828.png">
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer
+        style="background-color: #191919; background-image: url(images/Group-415.svg); background-repeat: no-repeat; float: left; width: 100%;">
+        <div class="Tenthdiv" style="width: 100%; border: solid #ffc538;  float: left;">
+            <div style="max-width: 1400px;padding: 20px 0px;margin: 0 auto;">
+                <div class="tenthdivleft">
+                    <div class="one" style="width: 32%;border:solid rgb(69, 15, 186)">
+                        <h2>Menu</h2>
+                        <ul class="ul"> 
+                            <li style="display: block;" >Home</li>
+                            <li style="display: block;">Franchise</li>
+                            <li style="display: block;">Team</li>
+                        </ul>
+                    </div>
+                    <div class="one" style="width: 32%;border:solid skyblue">
+                        <ul class="ul">
+                            <h2>                    </h2>
+                            <li style="display: block;">Our Story</li>
+                            <li style="display: block;">Our Team</li>
+                            <li style="display: block;">Our blog</li>
+                            <li style="display: block;">Contact</li>
+                        </ul></div>
+                    <div class="one" style="width: 33%;border:solid rgb(2, 36, 49)">
+                        <h2>Support</h2>
+                        <ul class="ul">
+                            <li style="display: block;">FAQ's</li>
+                            <li style="display: block;">Privacy Policy</li>
+                            <li style="display: block;">Return Policy</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tenthdivright">
+                    <div class="one" style="width: 49%;border:solid olive;"> 
+                        <h2>Contact</h2>
+                        <ul class="ul">
+                            <li style="display: block;">+91xyz</li>
+                            <li style="display: block;">+91abc</li>
+                            <li style="display: block;">Address#123, sector12,Mohali </li>
+                        </ul></div>
+                        <div class="one" style="width: 49%;border:solid rgb(221, 141, 13);">
+                            <h2>Download Our App</h2>
+                            <ul class="ul">
+                                <li style="display: block;">comming soon</li>
+                                <li><img src="images/Group-4938-1.svg"><img src="images/Group-4937-1.svg"></li>
+                                <li><img src="images/Icon-awesome-facebook-f.svg">
+                                    <img src="images/Icon-feather-instagram.svg">
+                                    <img src="images/Icon-awesome-pinterest-p.svg">
+                                    <img src="images/Icon-awesome-linkedin-in.svg">
+                                </li>
+                            </ul>
+
+                    </div>
+                   
+                </div>
+</body>
+
+</html>
